@@ -1,0 +1,157 @@
+// ファイルをインポート
+@use "variable" as v;
+@use "module" as m;
+
+
+.about-reason {
+    background-color: v.$bg-lightBeige;
+    padding: 80px 0;
+    overflow: hidden;
+
+    @include m.media(pc){
+        padding: 160px 0;
+    }
+
+    .about {
+        @include m.bg-White-style(60px , 0);
+
+        @include m.media(pc){
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: start;
+            gap: 40px;
+            padding: 80px 90px 80px 80px;
+            margin-left: calc(81px / 1920px * 100%);
+        }
+
+        &__title {
+        &--en {
+            @include m.media(pc){
+                font-size: 16rem;
+                text-align: end;
+                vertical-align: bottom;
+            }
+        }
+        }
+
+        &__txtGroup {
+        width: 100%;
+        }
+
+        &__txt {
+        margin-top: 24px;
+
+        @include m.media(pc){
+            margin-top: 40px;
+        }
+        }
+
+        &__img {
+        margin-top: 24px;
+
+        @include m.media(pc){
+            max-width: 650px;
+            margin-top: 0;
+        }
+        }
+    }
+
+    .reason {
+        @include m.bg-White-style(0 , 60px);
+        margin-top: 60px;
+
+        @include m.media(pc){
+            display: flex;
+            margin: 160px 160px 0 0;
+            padding: 80px calc(299px / 1920px * 100%) 80px calc(160px / 1920px * 100%);
+        }
+
+        &__inner {
+            @include m.media(pc){
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: fit-content 1fr;
+                gap: 40px;
+                margin-left: calc(152px / 1920px * 100%);
+            }
+        }
+
+        &__title {
+            @include m.media(pc){
+                grid-column: 1 / 3;
+            }
+
+            &--en {
+                @include m.media(pc){
+                display: none;
+                }
+            }
+        }
+
+        .pc__title--en {
+            display: none;
+
+            @include m.media(pc){
+                font-family:
+                "Josefin Sans",
+                "noto sans jp",
+                sans-serif;
+                font-size: 14.8rem;
+                line-height: 1;
+                color: rgb(77, 50, 7,  0.08);
+                display: block;
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+            }
+        }
+
+        &__content {
+            margin-top: 24px;
+
+            @include m.media(pc){
+                max-width: 480px;
+                margin-top: 0;
+            }
+
+            &--title {
+                font-size: 1.6rem;
+                font-weight: 700;
+                @extend %flex-center;
+
+                @include m.media(pc){
+                font-size: 2.4rem;
+                }
+            }
+
+            &--title::before {
+                content: '';
+                width: 4px;
+                height: 1em;
+                background-color: v.$main-black;
+                flex-shrink: 0;
+                margin-right: 8px;
+                margin-top: 1px;
+
+                @include m.media(pc){
+                height: 22px;
+                }
+            }
+
+            &--txt {
+                margin-top: 5px;
+
+                @include m.media(pc){
+                margin-top: 16px;
+                }
+            }
+
+            &--img {
+                margin-top: 16px;
+
+                @include m.media(pc){
+                margin-top: 40px;
+                }
+            }
+        }
+    }
+}

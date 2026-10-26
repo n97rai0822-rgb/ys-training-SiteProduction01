@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2172" height="207" viewBox="0 0 2172 207">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="2172" height="207" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="リピートグリッド_10" data-name="リピートグリッド 10" clip-path="url(#clip-path)">
+    <g transform="translate(24 -3043)">
+      <text id="Products" transform="translate(-24 3200)" fill="#fff" font-size="198" font-family="JosefinSans-Bold, Josefin Sans" font-weight="700" opacity="0.12"><tspan x="0" y="0">Products</tspan></text>
+    </g>
+    <g transform="translate(840 -3043)">
+      <text id="Products-2" data-name="Products" transform="translate(-24 3200)" fill="#fff" font-size="198" font-family="JosefinSans-Bold, Josefin Sans" font-weight="700" opacity="0.12"><tspan x="0" y="0">Products</tspan></text>
+    </g>
+    <g transform="translate(1656 -3043)">
+      <text id="Products-3" data-name="Products" transform="translate(-24 3200)" fill="#fff" font-size="198" font-family="JosefinSans-Bold, Josefin Sans" font-weight="700" opacity="0.12"><tspan x="0" y="0">Products</tspan></text>
+    </g>
+  </g>
+</svg>

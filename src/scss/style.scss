@@ -1,0 +1,14 @@
+@charset 'utf-8';
+// ファイルのインポート
+@use "./reset";
+@use "variable" as v;
+@use "module" as m;
+@use "common";
+@use "header";
+@use "mainvisual";
+@use "about";
+@use "products";
+@use "news";
+@use "shoplist";
+@use "contact";
+@use "footer";

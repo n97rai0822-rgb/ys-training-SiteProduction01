@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ページの説明">
+    <title>Y's CHOCOLATE</title>
+
+    <!-- Web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./scss/style.scss">
+
+</head>
+<body>
+  <header id="header" class="header">
+    <h1 class="logo">
+        <!-- sp logo -->
+        <a class="logo__link" href="#">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/logo_orange.svg">
+            <img class="logo__img" src="./img/logo_white.svg" alt="Y's CHOCOLATEのサイトロゴ">
+          </picture>
+        </a>
+    </h1>
+    <div class="header__right">
+      <a class="header__btn" href="#contact">お問い合わせ</a>
+      <div class="hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </div>
+    </div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__item--link" href="#about">私たちについて</a></li>
+        <li class="nav__item"><a class="nav__item--link" href="#reason">おいしさのわけ</a></li>
+        <li class="nav__item"><a class="nav__item--link" href="#products">商品一覧</a></li>
+        <li class="nav__item"><a class="nav__item--link" href="#news">ニュース</a></li>
+        <li class="nav__item"><a class="nav__item--link" href="#shoplist">店舗情報</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main" class="main">
+      <section class="mainVisual">
+        <picture class="mainVisual__picture">
+          <source media="(max-width: 767px)" srcset="./img/fv_sp.png" width="375" height="627">
+          <img src="./img/fv_pc.png" alt="濃厚なチョコレートソースがとろけるフォンダンショコラ" width="1920" height="765">
+        </picture>
+        <h2 class="mainVisual__title">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./img/fv_message.svg">
+            <img src="./img/fv_message_pc.svg" alt="日々の生活にちょっとした贅沢を‥。">
+          </picture>
+        </h2>
+        <div class="scroll__down">
+          <span class="scroll__down--txt">Scroll</span>
+        </div>
+      </section>
+      <section id="about-reason" class="about-reason">
+        <div id="about" class="about fadeIn">
+          <div class="about__txtGroup">
+            <div class="section__title about__title">
+              <span class="section__title--en about__title--en">About</span>
+              <h3 class="section__title--ja about__title--ja">Y’s CHOCOLATEとは？</h3>
+            </div>
+            <p class="about__txt">日々の生活にちょっとした贅沢を・・。<br>Y’s　CHOCOLATEは、カカオ豆とミルクにこだわり、独自の製法で丁寧に作っています。<br>口に入れた瞬間に滑らかに溶けていく・・。そんな至福の時間を味わってください。</p>
+          </div>
+          <img class="about__img" src="./img/about_image.png" alt="ココアパウダーをふるいにかけてチョコレートを作る様子" width="311" height="249">
+        </div>
+        <div id="reason" class="reason fadeIn">
+          <span class="pc__title--en">Reason</span>
+          <div class="inner reason__inner">
+            <div class="section__title reason__title">
+              <span class="section__title--en reason__title--en">Reason</span>
+              <h3 class="section__title--ja reason__title--ja">おいしさのわけ</h3>
+            </div>
+            <div class="reason__content">
+              <h4 class="reason__content--title">カカオ豆</h4>
+              <p class="reason__content--txt">カカオは、ガーナ産のカカオ豆を使用しています。スパイシーでほろ苦く香ばしい、日本人に馴染み深い味わいになっています。</p>
+              <img class="reason__content--img" src="./img/reason.png" alt="品質にこだわって選び抜いたカカオ豆" width="311" height="233">
+            </div>
+            <div class="reason__content">
+              <h4 class="reason__content--title">ミルク</h4>
+              <p class="reason__content--txt">ミルクは、北海道産の生乳を100%使用しています。クセの無い柔らかな味わいが、クリーミーなミルクチョコレートを作ります。</p>
+              <img class="reason__content--img" src="./img/milk.png" alt="北海道産の生乳を100%使用したミルク" width="311" height="233">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products" class="products">
+        <div class="section__title products__title">
+            <span class="section__title--en products__title--en">Products</span>
+            <h3 class="section__title--ja products__title--ja">商品一覧</h3>
+        </div>
+        <ul class="products__list">
+          <li class="products__item fadeIn">
+            <img class="products__img" src="./img/product_fondantImg.png" alt="中からミルクチョコレートが溢れ出るフォンダンショコラ" width="279" height="297">
+            <div class="products__txtGroup">
+              <h4 class="products__name">フォンダンショコラ</h4>
+              <p class="products__price"><span>800</span>円（税込/1個）</p>
+              <p class="products__desc">Y’s CHOCOLATEの一番人気商品です。中から溢れ出るミルクチョコレートはたまりません。外には、ほろ苦いコーヒービタ・・。</p>
+              <p class="products__allergies">※アレルギー28品目/小麦・卵・乳製品</p>
+            </div>
+          </li>
+          <li class="products__item fadeIn">
+            <img class="products__img" src="./img/product_brownieImg.png" alt="香り高いカカオパウダーを豊富に練り込んだブラウニー" width="279" height="297">
+            <div class="products__txtGroup">
+              <h4 class="products__name">ハニーミルクブラウニー</h4>
+              <p class="products__price"><span>800</span>円（税込/1個）</p>
+              <p class="products__desc">香り高いカカオパウダーを豊富に練り込んだブラウニー。ハニーミルクソースをたっぷりかけて召し上がれ。</p>
+              <p class="products__allergies">※アレルギー28品目/小麦・卵・乳製品</p>
+            </div>
+          </li>
+          <li class="products__item fadeIn">
+            <img class="products__img" src="./img/product_berryImg.png" alt="濃厚なミルクチョコレートの上に、静岡県産紅ほっぺのフリーズドライをふんだんにクラッシュしてのせたクラッシュベリーチョコレート" width="279" height="297">
+            <div class="products__txtGroup">
+              <h4 class="products__name">クラッシュベリーチョコレート</h4>
+              <p class="products__price"><span>1,200</span>円（税込/1個）</p>
+              <p class="products__desc">濃厚なミルクチョコレートの上に、静岡県産紅ほっぺのフリーズドライをふんだんにクラッシュしてのせました。濃厚な・・・</p>
+              <p class="products__allergies">※アレルギー28品目/小麦・卵・乳製品</p>
+            </div>
+          </li>
+          <li class="products__item fadeIn">
+            <img class="products__img" src="./img/product_selectionImg.png" alt="カカオとミルクにこだわったY’sCHOCOLATEのベストセレクションチョコレート" width="279" height="297">
+            <div class="products__txtGroup">
+              <h4 class="products__name">Y’s CHOCOLATE セレクション</h4>
+              <p class="products__price"><span>1,800</span>円（税込/1個）</p>
+              <p class="products__desc">カカオとミルクにこだわったY’sCHOCOLATEのベストセレクション。ご贈答用に、自分へのご褒美に是非お買い求めくださ・・・</p>
+              <p class="products__allergies">※アレルギー28品目/小麦・卵・乳製品</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="news" class="news">
+        <div class="inner inner__news fadeIn">
+          <div class="section__title news__title">
+            <span class="section__title--en news__title--en">News</span>
+            <h3 class="section__title--ja news__title--ja">ニュース</h3>
+          </div>
+          <ul class="news__list">
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <time class="news__date" datetime="2021-01-01">2021.1.1<span class="icon__new">NEW</span></time>
+                <p class="news__topic">
+                  <span class="news__topic--txt">新年のご挨拶</span>
+                </p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <time class="news__date" datetime="2021-12-18">2021.12.18<span class="icon__topic">TOPIC</span></time>
+                <p class="news__topic">
+                  <span class="news__topic--txt">年末年始の営業日に関しまして</span>
+                </p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <time class="news__date" datetime="2020-10-23">2020.10.23<span class="icon__topic">TOPIC</span></time>
+                <p class="news__topic">
+                  <span class="news__topic--txt">2020.11.1から2週間限定で伊勢丹新宿特設会場にて販売します</span>
+                </p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a class="news__link" href="#">
+                <time class="news__date" datetime="2020-01-13">2020.1.13</time>
+                <p class="news__topic">
+                  <span class="news__topic--txt">新商品「クラッシュベリーチョコレート」が販売開始となりました</span>
+                </p>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="news__btn">お知らせ一覧へ</button>
+        </div>
+      </section>
+      <section id="shoplist" class="shoplist">
+        <div class="shoplist__inner fadeIn">
+          <div class="section__title shoplist__title">
+            <span class="section__title--en shoplist__title--en">Shoplist</span>
+            <h3 class="section__title--ja shoplist__title--ja">店舗案内</h3>
+          </div>
+          <div class="shoplist__content">
+            <div class="shoplist__txtGroup">
+              <img class="logo__img shoplist__logo" src="./img/logo_white.svg" alt="Y's CHOCOLATEのサイトロゴ">
+              <div class="shoplist__info">
+                <h4 class="shoplist__info--title">店舗住所</h4>
+                <p class="shoplist__info--txt">〒160-0022<span class="address">東京都新宿区新宿2丁目1番地2 白鳥ビル1F</span></p>
+                <h4 class="shoplist__info--title">営業時間</h4>
+                <p class="shoplist__info--txt">10:00〜20:00</p>
+              </div>
+            </div>
+            <div class="shoplist__map">
+              <iframe title="Y's CHOCOLATEの所在地マップ" class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.537728204416!2d139.70692927578372!3d35.68838292958101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cc257017399%3A0xed5ee5e4b2e6f68b!2z44CSMTYwLTAwMjIg5p2x5Lqs6YO95paw5a6_5Yy65paw5a6_77yS5LiB55uu77yR4oiS77ySIDFm!5e0!3m2!1sja!2sjp!4v1782266263138!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <form class="form" method="post">
+          <div class="section__title contact__title">
+            <span class="section__title--en contact__title--en">Contact</span>
+            <h3 class="section__title--ja contact__title--ja">お問い合わせ</h3>
+          </div>
+          <div class="form__group">
+            <label class="label" for="name-kanji">お名前（漢字）</label>
+            <div class="input__group input__group--text">
+              <input type="text" id="name-kanji" name="name-kanji" placeholder="和伊津　花子" required class="input input-kanji">
+              <p class="error__message"></p>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="label" for="name-hiragana">お名前（ひらがな）</label>
+            <div class="input__group input__group--text">
+              <input type="text" id="name-hiragana" name="name-hiragana" placeholder="わいず　はなこ" required class="input input__hiragana">
+              <p class="error__message"></p>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="label" for="email">メールアドレス</label>
+            <div class="input__group input__group--text">
+              <input type="email" id="email" name="email" placeholder="aaaaaaaaa@ysinc.com" required class="input input__email">
+              <p class="error__message"></p>
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="label" for="content">お問い合わせ内容</label>
+            <div class="input__group input__group--textarea">
+              <textarea id="content" name="content" placeholder="お問い合わせ内容をご記入ください" required class="textarea input"></textarea>
+              <p class="error__message"></p>
+            </div>
+          </div>
+          <button type="submit" class="form__btn" >お問い合わせ送信</button>
+        </form>
+      </section>
+  </main>
+  <footer id="footer" class="footer">
+    <p class="footer__txt">＼シェアしてね／</p>
+    <div class="snsIcon">
+      <a href="#"><img class="snsIcon__img" src="./img/instagram_icon.svg" alt="Instagramのアイコン" width="50" height="50"></a>
+      <a href="#"><img class="snsIcon__img" src="./img/facebook_icon.svg" alt="facebookのアイコン" width="50" height="50"></a>
+      <a href="#"><img class="snsIcon__img" src="./img/twitter_icon.svg" alt="twitterのアイコン" width="50" height="50"></a>
+    </div>
+    <small class="copyright">&copy; 2021 Y's inc.</small>
+  </footer>
+  <!-- js -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@charset 'utf-8';
+// ファイルをインポート
+@use "variable" as v;
+@use "sass:map";
+
+// @extend用モジュール
+%flex-center {
+    display: flex;
+    align-items: center;
+}
+
+%transition {
+    transition: all 0.4s linear;
+}
+
+%btn-style {
+    font-weight: 700;
+    line-height: 1;
+    color: v.$main-white;
+    background-color: v.$main-black;
+    border-radius: 24px;
+    cursor: pointer;
+    @extend %transition;
+}
+
+%arrow-style {
+    content: '';
+    display: block;
+    background-image: url(../img/arrow_right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 6px;
+    height: 15px;
+    flex-shrink: 0;
+    margin-top: 3px
+}
+
+
+// @mixin用モジュール
+@mixin media($breakpoint){
+    @media #{map.get(v.$breakpoints, $breakpoint)}{
+        @content;
+    }
+}
+
+@mixin bg-White-style($radiusA,$radiusB){
+    background-color: v.$main-white;
+    padding: 40px v.$paddingSide-sp;
+    border-radius: $radiusA $radiusB;
+}
+
+@mixin hover-animation($color,$bgColor) {
+    color: $color;
+    background-color: $bgColor;
+}

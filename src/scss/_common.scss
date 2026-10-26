@@ -1,0 +1,72 @@
+// ファイルをインポート
+@use "variable" as v;
+@use "module" as m;
+
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family:
+        "noto sans cjk jp",
+        "noto sans jp",
+        sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: v.$main-black;
+    overflow-x: hidden;
+
+    @include m.media(pc){
+        font-size: 1.8rem;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.section__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    @include m.media(pc){
+        font-size: 3rem;
+    }
+
+    &--en{
+        font-family:
+        "Josefin Sans",
+        "noto sans jp",
+        sans-serif;
+        font-size: 6rem;
+        line-height: 1;
+        color: rgb(77, 50, 7,  0.08);
+        display: block;
+    }
+}
+
+// フェードインアニメーション
+.fadeIn {
+    opacity: 0;
+    transform: translateY(60px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+/*aboutは右から出現*/
+.about.fadeIn {
+    transform: translateX(80px);
+}
+/*reasonは左から出現*/
+.reason.fadeIn {
+    transform: translateX(-80px);
+}
+/*その他の要素は下から出現*/
+
+.fadeIn.show {
+    opacity: 1;
+    transform: none;
+}

@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+// 変数
+$main-black: #352628;
+$main-white: #FFFFFF;
+$bg-lightBeige: #E8E1DA;
+$bg-darkBeige: #4D32074B;
+$bg-header-white: #FAF7F5;
+$bg-footer-Beige: #C7BDAF;
+$bg-copyright-beige: #BAAD9C;
+$nav-border-gray: #FFFFFF66;
+$border-gray: #9B8F91;
+$title-en-white: rgba(255, 255, 255, 0.4);
+$newsIcon-red: #D6465D;
+$newsIcon-yellow: #C7991A;
+
+$paddingSide-sp: calc(32px / 375px * 100%);
+$breakpoints: (
+  'pc': "(min-width: 768px)",
+);
